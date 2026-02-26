@@ -5,4 +5,5 @@
 #ifndef AGENDA_INTERFACE_H
 #define AGENDA_INTERFACE_H
 int exibir_menu();
+char **solicitar_contatos();
 #endif //AGENDA_INTERFACE_H
