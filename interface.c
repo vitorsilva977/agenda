@@ -6,7 +6,16 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+int listar_contatos(agenda_t* agenda)
+{
+    for (int i = 0; i < 100; i++)
+    {
+        printf("contato: %d\n", i + 1);
+        printf("Nome:%s\n", agenda->contatos[i].nome);
+        printf("telefone:%d\n", agenda->contatos[i].telefone);
+        printf("Idade:%d\n", agenda->contatos[i].idade);
+    }
+}
 int exibir_menu() {
     int opcao;
     printf("======= AGENDA DE CONTATOS =======\n");
